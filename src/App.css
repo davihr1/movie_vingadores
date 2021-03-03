@@ -1,38 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background: url('./assets/AvengersEndGame_pt-BR.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: transparent;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header img {
+  width: 30mm;
+  margin-left: 4mm;
+  margin-top: 4mm;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header p {
+  color: #ffee;
+  font-size: 3rem;
+  font-family: 'Fascinate', cursive;
+  margin-right: 10mm;
+}
+
+.App-titles {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-left: 30mm;
+  margin-top: 10mm;
+}
+
+.App-titles h2 {
+  font-size: 4.600rem;
+  box-shadow: 3px 7px 60px rgba(0, 0, 0, 0.968);
+}
+
+.App-titles span {
+  margin-top: 9mm;
+  margin-left: 3mm;
+  font-size: 2rem;
+  box-shadow: 5px 6px 20px rgba(0, 0, 0, 1);
+}
+
+small {
+  width: 40mm;
+  height: 2mm;
+  background: black;
+  margin-left: 30mm;
+}
+
+.App-button {
+  margin-left: 30mm;
+  margin-top: 9mm;
+}
+
+.App-button a {
+  color: black;
+  background: #ffee;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 4mm 25mm 4mm;
+  width: 100%;
+  height: 100%;
+
+  transition: all 0.5s;
+}
+
+.App-button a:hover {
+  background: #fff;
+  border-radius: 5px;
+
+  transform: matrix(1, 2, 1, 1, 80, 80);
+
 }
